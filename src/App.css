@@ -2,22 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  justify-content: flex-start;
 }
+
 
 .data-grid-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .data-grid-list {
-  list-style-type: none;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 10px;
 }
+
 
 .list-item {
   margin-bottom: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .data-grid-button {
